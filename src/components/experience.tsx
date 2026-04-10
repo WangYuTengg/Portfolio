@@ -1,11 +1,13 @@
-import { experiences } from "@/data/portfolio";
+import { experiences, education } from "@/data/portfolio";
 
 export function Experience() {
   return (
     <section id="experience" className="bg-zinc-50 px-6 py-24 dark:bg-zinc-900/50">
       <div className="mx-auto max-w-3xl">
         <h2 className="mb-12 text-3xl font-bold tracking-tight">Experience</h2>
-        <div className="relative space-y-12 before:absolute before:left-[7px] before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-zinc-200 dark:before:bg-zinc-700">
+
+        {/* Work */}
+        <div className="relative mb-16 space-y-12 before:absolute before:left-[7px] before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-zinc-200 dark:before:bg-zinc-700">
           {experiences.map((exp) => (
             <div key={`${exp.company}-${exp.period}`} className="relative pl-10">
               <div className="absolute left-0 top-2 h-4 w-4 rounded-full border-2 border-zinc-300 bg-white dark:border-zinc-600 dark:bg-zinc-900" />
@@ -31,6 +33,33 @@ export function Experience() {
               </ul>
             </div>
           ))}
+        </div>
+
+        {/* Education */}
+        <h2 className="mb-8 text-3xl font-bold tracking-tight">Education</h2>
+        <div className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-800">
+          <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+            <h3 className="font-semibold">{education.school}</h3>
+            <span className="text-sm text-zinc-500 dark:text-zinc-400">
+              {education.period}
+            </span>
+          </div>
+          <p className="mb-1 text-sm text-blue-600 dark:text-blue-400">
+            {education.degree}
+          </p>
+          <p className="mb-4 text-sm text-zinc-600 dark:text-zinc-400">
+            {education.honours} &middot; CGPA: {education.gpa}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {education.awards.map((award) => (
+              <span
+                key={award}
+                className="rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700 dark:bg-amber-900/20 dark:text-amber-400"
+              >
+                {award}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>

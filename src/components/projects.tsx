@@ -11,15 +11,29 @@ export function Projects() {
               key={project.title}
               className="group flex flex-col rounded-xl border border-zinc-200 p-6 transition-shadow hover:shadow-lg dark:border-zinc-800"
             >
+              {(project.context || project.period) && (
+                <div className="mb-3 flex flex-wrap items-center gap-2">
+                  {project.context && (
+                    <span className="rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-900/20 dark:text-blue-400">
+                      {project.context}
+                    </span>
+                  )}
+                  {project.period && (
+                    <span className="text-xs text-zinc-400 dark:text-zinc-500">
+                      {project.period}
+                    </span>
+                  )}
+                </div>
+              )}
               <h3 className="mb-2 text-lg font-semibold">{project.title}</h3>
               <p className="mb-4 flex-1 text-sm text-zinc-600 leading-relaxed dark:text-zinc-400">
                 {project.description}
               </p>
-              <div className="mb-4 flex flex-wrap gap-2">
+              <div className="mb-4 flex flex-wrap gap-1.5">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
+                    className="rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
                   >
                     {tag}
                   </span>
