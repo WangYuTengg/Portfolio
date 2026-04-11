@@ -36,12 +36,21 @@ export const metadata: Metadata = {
     siteName: "Ethan Wang",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://wangyutengg.github.io/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Ethan Wang — Full-Stack Software Engineer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ethan Wang | Full-Stack Software Engineer",
     description:
       "Building production AI systems, full-stack web apps, and developer tools with TypeScript across the stack.",
+    images: ["https://wangyutengg.github.io/og-image.svg"],
   },
   robots: {
     index: true,

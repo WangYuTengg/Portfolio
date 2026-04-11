@@ -1,0 +1,28 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="260" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="64" font-weight="700" fill="url(#name)">Ethan Wang</text>
+  <text x="600" y="320" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="28" fill="#a1a1aa">Full-Stack Software Engineer</text>
+  <g transform="translate(280,370)">
+    <rect x="0" y="0" width="120" height="40" rx="20" fill="none" stroke="#3f3f46" stroke-width="1"/>
+    <text x="60" y="26" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#d4d4d8">TypeScript</text>
+    <rect x="140" y="0" width="85" height="40" rx="20" fill="none" stroke="#3f3f46" stroke-width="1"/>
+    <text x="182" y="26" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#d4d4d8">React</text>
+    <rect x="245" y="0" width="80" height="40" rx="20" fill="none" stroke="#3f3f46" stroke-width="1"/>
+    <text x="285" y="26" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#d4d4d8">AI/ML</text>
+    <rect x="345" y="0" width="120" height="40" rx="20" fill="none" stroke="#3f3f46" stroke-width="1"/>
+    <text x="405" y="26" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#d4d4d8">PostgreSQL</text>
+    <rect x="485" y="0" width="80" height="40" rx="20" fill="none" stroke="#3f3f46" stroke-width="1"/>
+    <text x="525" y="26" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#d4d4d8">Hono</text>
+  </g>
+</svg>
