@@ -25,7 +25,7 @@ export const experiences: Experience[] = [
     company: "Voltade",
     role: "Software Engineer (Founding Team)",
     period: "May 2025 - Present",
-    logo: "/logos/voltade.svg",
+    logo: "/logos/voltade.jpg",
     description:
       "Building production AI platforms for enterprise clients — from AI pipelines and WhatsApp integrations to dashboards and internal tooling.",
     highlights: [
@@ -41,7 +41,7 @@ export const experiences: Experience[] = [
     company: "Voltade",
     role: "Software Engineer Intern",
     period: "Jan 2024 - May 2025",
-    logo: "/logos/voltade.svg",
+    logo: "/logos/voltade.jpg",
     description:
       "Shipped AI chatbots for 12+ companies handling 10,000+ customer inquiries monthly.",
     highlights: [
@@ -54,7 +54,7 @@ export const experiences: Experience[] = [
     company: "Trilogy Technologies",
     role: "Software Engineer Intern",
     period: "May 2023 - Aug 2023",
-    logo: "/logos/trilogy.svg",
+    logo: "/logos/trilogy.png",
     description:
       "Built an internal workflow management system replacing paper-based processes for 30+ operators.",
     highlights: [
