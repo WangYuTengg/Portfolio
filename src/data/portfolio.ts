@@ -66,6 +66,7 @@ export const experiences: Experience[] = [
 export type ProjectCategory = "work" | "personal";
 
 export type Project = {
+  slug: string;
   title: string;
   description: string;
   tags: string[];
@@ -75,21 +76,25 @@ export type Project = {
   github?: string;
   period?: string;
   context?: string;
+  details?: string;
 };
 
 export const projects: Project[] = [
   {
+    slug: "uml-assessment-platform",
     title: "UML Assessment Platform",
     description:
       "AI-assisted assessment platform for universities — MCQ, written, coding, and UML assignments with LLM-powered grading, batch auto-grading, and AI cost tracking.",
     tags: ["React 19", "Hono", "TypeScript", "PostgreSQL", "Drizzle", "Vercel AI SDK", "Docker"],
     github: "https://github.com/WangYuTengg/fyp",
+    details: "Final Year Project building a full assessment platform supporting multiple question types (MCQ, written, coding, UML diagrams) with AI-assisted grading. Features auto-save/auto-submit with focus monitoring, deterministic question shuffling, rubric editor, accept/reject/override grading workflow, batch auto-grading with queue monitoring, and AI cost tracking per assignment.",
     image: "/projects/fyp.svg",
     category: "personal",
     context: "Final Year Project",
     period: "2025 - 2026",
   },
   {
+    slug: "stackedhomes",
     title: "StackedHomes AI Outreach",
     description:
       "WhatsApp outreach and lead qualification for real estate — real-time chat sandbox, bulk simulation, AI training dashboard with prompt diff views.",
@@ -100,6 +105,7 @@ export const projects: Project[] = [
     period: "2025 - 2026",
   },
   {
+    slug: "inventory-ocr",
     title: "Multi-Supplier Inventory & OCR",
     description:
       "Telegram bot for inventory ops — OCR invoice processing, fuzzy supplier matching, auto currency conversion, Google Sheets integration.",
@@ -110,6 +116,7 @@ export const projects: Project[] = [
     period: "2025 - 2026",
   },
   {
+    slug: "mobile-life",
     title: "Mobile Life Platform",
     description:
       "Phone repair and trade-in platform with AI chatbot — 13-step conversation flow, Shopify CSV import, catalog management. 59 passing tests.",
@@ -120,6 +127,7 @@ export const projects: Project[] = [
     period: "2025 - 2026",
   },
   {
+    slug: "hr-ai-agents",
     title: "HR AI Agents",
     description:
       "Workforce planning and talent acquisition pipelines — Gmail polling, calendar integration, AI resume extraction, succession plan generation.",
@@ -130,6 +138,7 @@ export const projects: Project[] = [
     period: "2026",
   },
   {
+    slug: "lineageflow",
     title: "LineageFlow",
     description:
       "Data versioning for the ML lifecycle — Git-like branches, commits, merges, and rollbacks. Built in one week.",
@@ -141,6 +150,7 @@ export const projects: Project[] = [
     period: "2024",
   },
   {
+    slug: "quizzwhizz",
     title: "QuizzWhizz",
     description:
       "AI quiz generator from lecture videos — Amazon Transcribe + Textract pipeline, Chrome extension, Streamlit frontend.",
@@ -152,6 +162,7 @@ export const projects: Project[] = [
     period: "2023",
   },
   {
+    slug: "solarian",
     title: "Solarian",
     description:
       "CV system detecting rooftops for solar panel potential — UNet segmentation at ~87% accuracy, irradiance-adjusted savings estimates.",
@@ -163,6 +174,7 @@ export const projects: Project[] = [
     period: "2022",
   },
   {
+    slug: "logiflow",
     title: "LogiFlow",
     description:
       "Logistics optimization for PSA — ARIMA forecasting for vessel arrivals, interactive dashboards, real-time port news sentiment analysis.",

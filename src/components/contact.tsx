@@ -1,4 +1,5 @@
 import { siteConfig } from "@/data/portfolio";
+import { GithubIcon, LinkedinIcon } from "@/components/social-icons";
 
 export function Contact() {
   return (
@@ -14,28 +15,30 @@ export function Contact() {
         >
           {siteConfig.email}
         </a>
-        <div className="mt-8 flex justify-center gap-6">
-          {siteConfig.socials.github && (
-            <a
-              href={siteConfig.socials.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-zinc-100"
-            >
-              GitHub
-            </a>
-          )}
-          {siteConfig.socials.linkedin && (
-            <a
-              href={siteConfig.socials.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-zinc-100"
-            >
-              LinkedIn
-            </a>
-          )}
+        <div className="mt-8 flex justify-center gap-4">
+          <a
+            href={siteConfig.socials.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg p-2 text-zinc-400 transition-colors hover:text-zinc-900 dark:hover:text-zinc-100"
+            aria-label="GitHub"
+          >
+            <GithubIcon className="h-6 w-6" />
+          </a>
+          <a
+            href={siteConfig.socials.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg p-2 text-zinc-400 transition-colors hover:text-zinc-900 dark:hover:text-zinc-100"
+            aria-label="LinkedIn"
+          >
+            <LinkedinIcon className="h-6 w-6" />
+          </a>
         </div>
+        <p className="mt-6 text-xs text-zinc-400 dark:text-zinc-500">
+          {/* TODO: Add a contact form (Formspree/Resend) */}
+          Contact form coming soon.
+        </p>
       </div>
     </section>
   );

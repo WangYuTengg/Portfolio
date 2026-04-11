@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { projects, type ProjectCategory } from "@/data/portfolio";
 
 const filters: { label: string; value: ProjectCategory | "all" }[] = [
@@ -88,7 +89,9 @@ export function Projects() {
                     )}
                   </div>
                 )}
-                <h3 className="mb-2 text-lg font-semibold">{project.title}</h3>
+                <Link href={`/projects/${project.slug}`} className="mb-2 text-lg font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                {project.title}
+              </Link>
                 <p className="mb-3 flex-1 text-sm text-zinc-600 leading-relaxed dark:text-zinc-400">
                   {project.description}
                 </p>

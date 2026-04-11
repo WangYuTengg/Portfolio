@@ -13,9 +13,40 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ethan | Full-Stack Developer",
+  title: "Ethan Wang | Full-Stack Software Engineer",
   description:
-    "Full-stack developer building modern web experiences with TypeScript, React, and Node.js.",
+    "Full-stack software engineer building production AI systems, web apps, and developer tools with TypeScript. Founding team at Voltade. NTU CS & Econ.",
+  keywords: [
+    "Ethan Wang",
+    "software engineer",
+    "full-stack developer",
+    "TypeScript",
+    "React",
+    "AI",
+    "Singapore",
+    "NTU",
+    "Voltade",
+  ],
+  authors: [{ name: "Ethan Wang" }],
+  openGraph: {
+    title: "Ethan Wang | Full-Stack Software Engineer",
+    description:
+      "Building production AI systems, full-stack web apps, and developer tools with TypeScript across the stack.",
+    url: "https://wangyutengg.github.io",
+    siteName: "Ethan Wang",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ethan Wang | Full-Stack Software Engineer",
+    description:
+      "Building production AI systems, full-stack web apps, and developer tools with TypeScript across the stack.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +58,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
