@@ -49,12 +49,27 @@ export const experiences: Experience[] = [
       "Engineered automated web-scraping with TypeScript and AWS Event Scheduler for vector RAG-based chatbot knowledge enrichment",
     ],
   },
+  {
+    company: "Trilogy Technologies",
+    role: "Software Engineer Intern",
+    period: "May 2023 - Aug 2023",
+    description:
+      "Spearheaded end-to-end development of an internal workflow management system, replacing manual paper-based processes for 30+ operators.",
+    highlights: [
+      "Built a Job Traveller Management System (JTMS) using MongoDB, Express, ReactJS, and Node.js (MERN stack)",
+      "Developed product progress tracking UI with per-form progress bars and product card overviews",
+      "Implemented route protection, URL encoding/decoding for SO numbers, and error handling",
+    ],
+  },
 ];
+
+export type ProjectCategory = "work" | "personal";
 
 export type Project = {
   title: string;
   description: string;
   tags: string[];
+  category: ProjectCategory;
   link?: string;
   github?: string;
   period?: string;
@@ -82,6 +97,7 @@ export const projects: Project[] = [
       "Docker",
     ],
     github: "https://github.com/WangYuTengg/fyp",
+    category: "personal",
     context: "Final Year Project",
     period: "2025 - 2026",
   },
@@ -99,6 +115,7 @@ export const projects: Project[] = [
       "PostgreSQL",
       "Drizzle ORM",
     ],
+    category: "work",
     context: "Voltade — Client Project",
     period: "2025 - 2026",
   },
@@ -116,6 +133,7 @@ export const projects: Project[] = [
       "Telegram Bot API",
       "PostgreSQL",
     ],
+    category: "work",
     context: "Voltade — Client Project",
     period: "2025 - 2026",
   },
@@ -133,6 +151,7 @@ export const projects: Project[] = [
       "WhatsApp API",
       "Zod",
     ],
+    category: "work",
     context: "Voltade — Client Project",
     period: "2025 - 2026",
   },
@@ -151,6 +170,7 @@ export const projects: Project[] = [
       "OpenAI",
       "Claude Agent SDK",
     ],
+    category: "work",
     context: "Voltade — Internal Project",
     period: "2026",
   },
@@ -160,6 +180,7 @@ export const projects: Project[] = [
       "Data versioning and lineage tracking tool for the ML lifecycle, built in one week for TikTok TechJam 2024. Uses Git-like semantics — branches, commits, merges, and rollbacks for data version control. Features repositories, file/folder object views, staging area, independent branch commit histories, and detailed commit history with rollback.",
     tags: ["React", "Vite", "Django", "Supabase", "PostgreSQL", "Google Cloud Storage"],
     github: "https://github.com/WangYuTengg/LineageFlow",
+    category: "personal",
     context: "TikTok TechJam 2024",
     period: "2024",
   },
@@ -178,6 +199,7 @@ export const projects: Project[] = [
       "Amazon S3",
     ],
     github: "https://github.com/WangYuTengg/AIfinity-TeamAWSome-QuizzWhizz",
+    category: "personal",
     context: "AWS AIfinity 2023 Hackathon — Top 10 Finalists",
     period: "2023",
   },
@@ -187,6 +209,7 @@ export const projects: Project[] = [
       "Computer vision system to detect and classify commercial/industrial rooftops in Singapore for solar panel installation potential. Trained a UNet image segmentation model achieving ~87% accuracy over 100 epochs. Users input a location and receive flat roof surface area estimates and projected savings from solar installation using regional irradiance data.",
     tags: ["Python", "OpenCV", "Keras", "TensorFlow", "Streamlit", "Scikit-learn", "Geopy"],
     github: "https://github.com/WangYuTengg/MLDA-DLWHackathon-Project-Solarian",
+    category: "personal",
     context: "MLDA Deep Learning Week 2022 — Winner (Best Software Application)",
     period: "2022",
   },
@@ -196,6 +219,7 @@ export const projects: Project[] = [
       "Container logistics demand-supply optimization platform built for PSA (Port of Singapore Authority). Features AI-driven predictive analytics for vessel arrivals and container throughput using ARIMA time-series forecasting (MASE = 0.622), interactive dashboards, simulated cost scenario analysis, and real-time sentiment analysis of port-related news.",
     tags: ["React", "Flask", "Python", "ARIMA", "Pandas", "NumPy", "Nivo", "Recharts"],
     github: "https://github.com/WangYuTengg/LogiFlow",
+    category: "personal",
     context: "NTU Techfest Hackathon 2023 — Top 10 Finalists",
     period: "2023",
   },
