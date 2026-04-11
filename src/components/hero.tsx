@@ -29,6 +29,16 @@ export function Hero() {
           >
             Get in Touch
           </a>
+          <a
+            href="/resume.pdf"
+            download="Wang_Yu_Teng_Resume.pdf"
+            className="flex items-center gap-2 rounded-full border border-zinc-300 px-6 py-3 text-sm font-medium transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 18h16" />
+            </svg>
+            Resume
+          </a>
         </div>
       </div>
     </section>
