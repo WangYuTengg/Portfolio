@@ -115,15 +115,15 @@ export const projects: Project[] = [
     period: "2025",
   },
   {
-    slug: "hr-ai-agents",
-    title: "HR AI Agents",
+    slug: "voltade-studio",
+    title: "Voltade Studio",
     description:
-      "Workforce planning and talent acquisition pipelines. Gmail polling, calendar integration, AI resume extraction, succession plan generation.",
-    tags: ["TypeScript", "React", "Hono", "Drizzle", "pg-boss", "Claude Agent SDK"],
-    image: "/projects/hr-agents.svg",
+      "No-code AI agent builder where non-technical users create, test, and deploy chatbots to WhatsApp, Web, and Telegram through a conversational \"vibe coding\" interface.",
+    tags: ["TanStack Start", "Bun", "Drizzle", "E2B", "Vercel AI SDK", "Mastra", "Railway"],
+    image: "/projects/studio.svg",
     category: "work",
-    context: "Voltade (Internal Project)",
-    period: "2026",
+    context: "Voltade (Core Product)",
+    period: "2025 - 2026",
   },
   {
     slug: "lineageflow",
