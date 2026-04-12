@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { aboutText } from "@/data/portfolio";
 
 export function About() {
   return (
@@ -7,10 +6,31 @@ export function About() {
       <div className="mx-auto max-w-4xl">
         <h2 className="mb-8 text-3xl font-bold tracking-tight">About Me</h2>
         <div className="flex flex-col gap-10 md:flex-row md:items-start">
-          <div className="flex-1 space-y-4 text-zinc-600 leading-relaxed dark:text-zinc-400">
-            {aboutText.map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
-            ))}
+          <div className="flex-1 space-y-4 leading-relaxed">
+            <p className="text-zinc-600 dark:text-zinc-400">
+              I&apos;m a full-stack software engineer on the founding team at{" "}
+              <span className="font-medium text-foreground">Voltade</span>, where
+              I build production AI systems for enterprise clients. I&apos;ve worked on
+              everything from{" "}
+              <span className="text-blue-600 dark:text-blue-400">supplier intelligence platforms</span> and{" "}
+              <span className="text-blue-600 dark:text-blue-400">WhatsApp-integrated chatbots</span> to{" "}
+              <span className="text-blue-600 dark:text-blue-400">OCR invoice processing</span> and a{" "}
+              <span className="text-blue-600 dark:text-blue-400">no-code AI agent builder</span>.
+            </p>
+            <p className="text-zinc-600 dark:text-zinc-400">
+              My go-to stack is{" "}
+              <span className="font-medium text-foreground">TypeScript everywhere</span>:{" "}
+              React on the frontend, Hono on the backend, PostgreSQL + Drizzle for data,
+              and OpenAI/Anthropic for AI. I care about shipping fast, writing clean code,
+              and building things that actually get used.
+            </p>
+            <p className="text-zinc-600 dark:text-zinc-400">
+              Currently finishing my double degree in{" "}
+              <span className="font-medium text-foreground">Computer Science</span> and{" "}
+              <span className="font-medium text-foreground">Economics</span> at NTU Singapore
+              (CGPA 4.5/5.0). When I&apos;m not coding, I&apos;m probably playing Valorant
+              or hunting for good food.
+            </p>
           </div>
           <div className="flex shrink-0 justify-center md:justify-end">
             <div className="h-72 w-56 overflow-hidden rounded-2xl">
