@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Full-Stack Software Engineer",
   tagline:
     "Building production AI systems, full-stack web apps, and developer tools with TypeScript across the stack.",
-  email: "WANG1708@e.ntu.edu.sg",
+  email: "wyuteng123@gmail.com",
   phone: "+65 91785810",
   socials: {
     github: "https://github.com/WangYuTengg",
