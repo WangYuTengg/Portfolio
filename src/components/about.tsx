@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { aboutText } from "@/data/portfolio";
 
 export function About() {
@@ -12,8 +13,15 @@ export function About() {
             ))}
           </div>
           <div className="flex shrink-0 justify-center md:justify-end">
-            <div className="flex h-72 w-56 items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-zinc-300 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
-              <span className="text-xs text-zinc-400 dark:text-zinc-500">Photo</span>
+            <div className="h-72 w-56 overflow-hidden rounded-2xl">
+              <Image
+                src="/profile.jpg"
+                alt="Ethan Wang"
+                width={224}
+                height={288}
+                className="h-full w-full object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
