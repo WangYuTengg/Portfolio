@@ -12,15 +12,27 @@ export function ThemeToggle() {
     if (stored) {
       setTheme(stored);
       applyTheme(stored);
+    } else {
+      // On first load, apply system preference as a class
+      applyTheme("system");
     }
   }, []);
 
   function applyTheme(t: Theme) {
     const root = document.documentElement;
     root.classList.remove("light", "dark");
-    if (t === "dark") root.classList.add("dark");
-    else if (t === "light") root.classList.add("light");
-    // "system" falls through to prefers-color-scheme
+    if (t === "dark") {
+      root.classList.add("dark");
+    } else if (t === "light") {
+      root.classList.add("light");
+    } else {
+      // System: check actual preference and apply class
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        root.classList.add("dark");
+      } else {
+        root.classList.add("light");
+      }
+    }
   }
 
   function cycle() {
