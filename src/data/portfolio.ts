@@ -88,7 +88,7 @@ export const projects: Project[] = [
     tags: ["React 19", "Hono", "TypeScript", "PostgreSQL", "Drizzle", "Vercel AI SDK", "Docker"],
     github: "https://github.com/WangYuTengg/fyp",
     details: "Final Year Project building a full assessment platform supporting multiple question types (MCQ, written, coding, UML diagrams) with AI-assisted grading. Features auto-save/auto-submit with focus monitoring, deterministic question shuffling, rubric editor, accept/reject/override grading workflow, batch auto-grading with queue monitoring, and AI cost tracking per assignment.",
-    image: "/projects/fyp.svg",
+    image: "/projects/fyp.jpg",
     category: "personal",
     context: "Final Year Project",
     period: "2025 - 2026",
