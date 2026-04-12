@@ -110,7 +110,7 @@ export const projects: Project[] = [
     description:
       "Telegram bot for inventory ops — OCR invoice processing, fuzzy supplier matching, auto currency conversion, Google Sheets integration.",
     tags: ["Mastra", "Hono", "Bun", "OpenAI", "Google Sheets API", "Telegram Bot API"],
-    image: "/projects/ocr.svg",
+    image: "/projects/ocr.jpg",
     category: "work",
     context: "Voltade — Client Project",
     period: "2025 - 2026",
