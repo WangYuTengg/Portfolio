@@ -29,9 +29,10 @@ export const experiences: Experience[] = [
     description:
       "Building production AI platforms for enterprise clients at an early-stage startup. Working across the full stack, from AI pipelines and WhatsApp integrations to dashboards and internal tooling.",
     highlights: [
+      "Voltade Studio: no-code AI agent builder for creating, testing, and deploying chatbots",
       "Supplier intelligence platform: 2,000+ invoices/month, ≥99% extraction accuracy",
       "WhatsApp outreach system: lead qualification, AI reply delays, conversation sandbox",
-      "OCR inventory system: invoice processing, fuzzy matching, currency conversion",
+      "Inventory + OCR system: invoice processing, fuzzy matching, currency conversion, Google Sheets integration",
       "Workforce planning AI: Gmail polling, resume extraction, succession planning",
       "Internal Telegram bot: Claude Agent SDK, multi-model routing, Notion integration",
     ],
