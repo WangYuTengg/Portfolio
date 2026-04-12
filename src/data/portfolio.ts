@@ -99,7 +99,7 @@ export const projects: Project[] = [
     description:
       "WhatsApp outreach and lead qualification for real estate — real-time chat sandbox, bulk simulation, AI training dashboard with prompt diff views.",
     tags: ["TypeScript", "React", "Hono", "WhatsApp API", "OpenAI", "Mastra"],
-    image: "/projects/stackedhomes.svg",
+    image: "/projects/stackedhomes.jpg",
     category: "work",
     context: "Voltade — Client Project",
     period: "2025 - 2026",
