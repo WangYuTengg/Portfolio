@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { siteConfig } from "@/data/portfolio";
+import { Stats } from "@/components/stats";
 
 const roles = [
   "Full-Stack Engineer",
@@ -42,12 +43,12 @@ export function Hero() {
   }, [text, deleting, roleIndex]);
 
   return (
-    <section className="relative flex min-h-[85vh] flex-col items-center justify-center overflow-hidden px-6 pt-16 text-center">
+    <section className="relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden px-6 pt-16">
       {/* Gradient orbs */}
       <div className="pointer-events-none absolute -left-40 -top-40 h-96 w-96 rounded-full bg-blue-400/15 blur-3xl dark:bg-blue-500/10" />
       <div className="pointer-events-none absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-violet-400/15 blur-3xl dark:bg-violet-500/10" />
 
-      <div className="relative mx-auto max-w-2xl">
+      <div className="relative mx-auto max-w-2xl text-center">
         <h1 className="mb-4 text-5xl font-bold tracking-tight sm:text-6xl">
           Hi, I&apos;m{" "}
           <span className="animated-gradient bg-gradient-to-r from-blue-600 via-violet-600 to-blue-600 bg-clip-text text-transparent">
@@ -64,7 +65,7 @@ export function Hero() {
           {siteConfig.tagline}
         </p>
 
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="mb-16 flex flex-wrap justify-center gap-3">
           <a
             href="#projects"
             className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition-all hover:bg-zinc-700 hover:shadow-lg dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
@@ -88,6 +89,8 @@ export function Hero() {
             Resume
           </a>
         </div>
+
+        <Stats />
       </div>
     </section>
   );

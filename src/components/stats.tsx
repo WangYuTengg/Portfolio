@@ -3,8 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 498, suffix: "+", label: "Commits (2026)" },
+  { value: 498, suffix: "+", label: "Commits" },
   { value: 30, suffix: "+", label: "Companies Served" },
+  { value: 3, suffix: "", label: "Hackathon Wins" },
+  { value: 2, suffix: "+", label: "Years Experience" },
 ];
 
 function AnimatedNumber({ target, suffix, inView }: { target: number; suffix: string; inView: boolean }) {
@@ -52,17 +54,15 @@ export function Stats() {
   }, []);
 
   return (
-    <section ref={ref} className="border-y border-zinc-200/80 bg-white px-6 py-16 dark:border-zinc-800 dark:bg-zinc-900/30">
-      <div className="mx-auto flex max-w-2xl justify-center gap-16 sm:gap-24">
-        {stats.map((stat) => (
-          <div key={stat.label} className="text-center">
-            <div className="mb-1 text-3xl font-bold tracking-tight sm:text-4xl">
-              <AnimatedNumber target={stat.value} suffix={stat.suffix} inView={inView} />
-            </div>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400">{stat.label}</p>
+    <div ref={ref} className="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-8">
+      {stats.map((stat) => (
+        <div key={stat.label} className="text-center">
+          <div className="mb-0.5 text-2xl font-bold tracking-tight sm:text-3xl">
+            <AnimatedNumber target={stat.value} suffix={stat.suffix} inView={inView} />
           </div>
-        ))}
-      </div>
-    </section>
+          <p className="text-xs text-zinc-500 dark:text-zinc-400">{stat.label}</p>
+        </div>
+      ))}
+    </div>
   );
 }
