@@ -18,7 +18,7 @@ export function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-zinc-200 bg-white/80 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-950/80">
+    <nav className="fixed top-0 z-50 w-full border-b border-zinc-200/60 bg-white/90 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-950/80">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
         <a href="#" className="text-lg font-bold tracking-tight">
           {siteConfig.name}

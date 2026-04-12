@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafafa;
+  --foreground: #111111;
 }
 
 @theme inline {
@@ -61,10 +61,4 @@ body {
 .animated-gradient {
   background-size: 200% 200%;
   animation: gradient-shift 6s ease infinite;
-}
-
-/* Counter animation */
-@keyframes count-up {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
 }

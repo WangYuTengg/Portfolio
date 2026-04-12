@@ -33,7 +33,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-zinc-50 px-6 py-24 dark:bg-zinc-900/50">
+    <section id="contact" className="bg-white px-6 py-24 dark:bg-zinc-900/50">
       <div className="mx-auto max-w-xl">
         <h2 className="mb-4 text-center text-3xl font-bold tracking-tight">Get in Touch</h2>
         <p className="mb-8 text-center text-zinc-600 dark:text-zinc-400">

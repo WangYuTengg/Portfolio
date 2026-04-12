@@ -56,7 +56,7 @@ export function ProjectCard({ project }: { project: Project }) {
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="group relative flex flex-col overflow-hidden rounded-xl border border-zinc-200 transition-[transform,box-shadow] duration-200 ease-out hover:shadow-xl dark:border-zinc-800"
+      className="group relative flex flex-col overflow-hidden rounded-xl border border-zinc-200 bg-white transition-[transform,box-shadow] duration-200 ease-out hover:shadow-xl dark:border-zinc-800 dark:bg-transparent"
       style={{ transformStyle: "preserve-3d" }}
     >
       {/* Shine overlay */}
