@@ -171,7 +171,7 @@ export const projects: Project[] = [
     github: "https://github.com/WangYuTengg/LogiFlow",
     image: "/projects/logiflow.svg",
     category: "personal",
-    context: "NTU Techfest 2023 — Top 10",
+    context: "PSA Code Sprint 2023 — Top 8",
     period: "2023",
   },
 ];
@@ -185,7 +185,7 @@ export const education = {
   awards: [
     "NTU College Scholarship",
     "MLDA Deep Learning Week 2022 Hackathon Winner — Best Software Application",
-    "NTU Techfest Hackathon 2023 — Top 10 Finalists",
+    "PSA Code Sprint 2023 — Top 8",
     "AWS AIfinity Hackathon 2023 — Top 10 Finalists",
   ],
 } as const;
