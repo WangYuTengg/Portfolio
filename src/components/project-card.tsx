@@ -2,7 +2,6 @@
 
 import { useRef, type MouseEvent } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import type { Project } from "@/data/portfolio";
 
 function GithubIcon() {
@@ -88,12 +87,9 @@ export function ProjectCard({ project }: { project: Project }) {
             )}
           </div>
         )}
-        <Link
-          href={`/projects/${project.slug}`}
-          className="mb-2 text-lg font-semibold transition-colors hover:text-blue-600 dark:hover:text-blue-400"
-        >
+        <h3 className="mb-2 text-lg font-semibold">
           {project.title}
-        </Link>
+        </h3>
         <p className="mb-3 flex-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
           {project.description}
         </p>
