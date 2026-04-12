@@ -119,7 +119,7 @@ export const projects: Project[] = [
     title: "Voltade Studio",
     description:
       "No-code AI agent builder where non-technical users create, test, and deploy chatbots to WhatsApp, Web, and Telegram through a conversational \"vibe coding\" interface.",
-    tags: ["TanStack Start", "Bun", "Drizzle", "E2B", "Vercel AI SDK", "Mastra", "Railway"],
+    tags: ["TanStack Start", "Bun", "Drizzle", "E2B", "OpenCode", "Mastra", "Railway"],
     image: "/projects/studio.svg",
     category: "work",
     context: "Voltade (Core Product)",
