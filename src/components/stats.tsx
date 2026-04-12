@@ -4,9 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const stats = [
   { value: 498, suffix: "+", label: "Commits (2026)" },
-  { value: 12, suffix: "+", label: "Companies Served" },
-  { value: 10, suffix: "K+", label: "Monthly Inquiries" },
-  { value: 4.5, suffix: "/5.0", label: "CGPA" },
+  { value: 30, suffix: "+", label: "Companies Served" },
 ];
 
 function AnimatedNumber({ target, suffix, inView }: { target: number; suffix: string; inView: boolean }) {
@@ -24,7 +22,7 @@ function AnimatedNumber({ target, suffix, inView }: { target: number; suffix: st
         setValue(target);
         clearInterval(timer);
       } else {
-        setValue(Number.isInteger(target) ? Math.floor(current) : Math.round(current * 10) / 10);
+        setValue(Math.floor(current));
       }
     }, duration / steps);
     return () => clearInterval(timer);
@@ -55,7 +53,7 @@ export function Stats() {
 
   return (
     <section ref={ref} className="border-y border-zinc-200 bg-zinc-50/50 px-6 py-16 dark:border-zinc-800 dark:bg-zinc-900/30">
-      <div className="mx-auto grid max-w-4xl grid-cols-2 gap-8 sm:grid-cols-4">
+      <div className="mx-auto flex max-w-2xl justify-center gap-16 sm:gap-24">
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">
             <div className="mb-1 text-3xl font-bold tracking-tight sm:text-4xl">

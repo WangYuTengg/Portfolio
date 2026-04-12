@@ -48,11 +48,6 @@ export function Hero() {
       <div className="pointer-events-none absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-violet-500/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-2xl">
-        <div className="mb-6 inline-flex items-center rounded-full border border-zinc-200 bg-white/50 px-4 py-1.5 text-sm backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-900/50">
-          <span className="mr-2 h-2 w-2 rounded-full bg-emerald-500" />
-          Open to opportunities
-        </div>
-
         <h1 className="mb-4 text-5xl font-bold tracking-tight sm:text-6xl">
           Hi, I&apos;m{" "}
           <span className="animated-gradient bg-gradient-to-r from-blue-600 via-violet-600 to-blue-600 bg-clip-text text-transparent">
