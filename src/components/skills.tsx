@@ -38,14 +38,14 @@ export function Skills() {
                 >
                   {icon}
                 </div>
-                <h3 className="text-sm font-semibold">{label}</h3>
+                <h3 className="text-[15px] font-semibold">{label}</h3>
               </div>
 
               <div className="flex flex-wrap gap-1.5">
                 {skills[key].map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-md bg-zinc-50 px-2 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800/60 dark:text-zinc-400"
+                    className="rounded-md bg-zinc-50 px-2 py-0.5 text-[13px] text-zinc-600 dark:bg-zinc-800/60 dark:text-zinc-400"
                   >
                     {skill}
                   </span>

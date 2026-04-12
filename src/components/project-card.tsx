@@ -76,12 +76,12 @@ export function ProjectCard({ project }: { project: Project }) {
         {(project.context || project.period) && (
           <div className="mb-2 flex flex-wrap items-center gap-2">
             {project.context && (
-              <span className="rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-900/20 dark:text-blue-400">
+              <span className="rounded-full bg-blue-50 px-2.5 py-0.5 text-[13px] font-medium text-blue-700 dark:bg-blue-900/20 dark:text-blue-400">
                 {project.context}
               </span>
             )}
             {project.period && (
-              <span className="text-xs text-zinc-400 dark:text-zinc-500">
+              <span className="text-[13px] text-zinc-400 dark:text-zinc-500">
                 {project.period}
               </span>
             )}
@@ -90,14 +90,14 @@ export function ProjectCard({ project }: { project: Project }) {
         <h3 className="mb-2 text-lg font-semibold">
           {project.title}
         </h3>
-        <p className="mb-3 flex-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+        <p className="mb-3 flex-1 text-[15px] leading-relaxed text-zinc-600 dark:text-zinc-400">
           {project.description}
         </p>
         <div className="mb-3 flex flex-wrap gap-1.5">
           {project.tags.slice(0, 5).map((tag) => (
             <span
               key={tag}
-              className="rounded-md bg-zinc-100 px-2 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
+              className="rounded-md bg-zinc-100 px-2 py-0.5 text-[13px] text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
             >
               {tag}
             </span>
@@ -108,7 +108,7 @@ export function ProjectCard({ project }: { project: Project }) {
             </span>
           )}
         </div>
-        <div className="flex gap-3 text-sm font-medium">
+        <div className="flex gap-3 text-[15px] font-medium">
           {project.github && (
             <a
               href={project.github}

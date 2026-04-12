@@ -32,7 +32,7 @@ export function Footer() {
             <EmailIcon />
           </a>
         </div>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400">
+        <p className="text-center text-[15px] text-zinc-500 dark:text-zinc-400">
           &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
         </p>
       </div>

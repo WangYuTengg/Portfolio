@@ -60,7 +60,7 @@ export function Stats() {
           <div className="mb-0.5 text-2xl font-bold tracking-tight sm:text-3xl">
             <AnimatedNumber target={stat.value} suffix={stat.suffix} inView={inView} />
           </div>
-          <p className="text-xs text-zinc-500 dark:text-zinc-400">{stat.label}</p>
+          <p className="text-[13px] text-zinc-500 dark:text-zinc-400">{stat.label}</p>
         </div>
       ))}
     </div>

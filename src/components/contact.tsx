@@ -36,7 +36,7 @@ export function Contact() {
     <section id="contact" className="bg-white px-6 py-24 dark:bg-zinc-900/50">
       <div className="mx-auto max-w-xl">
         <h2 className="mb-4 text-center text-3xl font-bold tracking-tight">Get in Touch</h2>
-        <p className="mb-8 text-center text-zinc-600 dark:text-zinc-400">
+        <p className="mb-8 text-center text-[15px] text-zinc-600 dark:text-zinc-400">
           Have a project in mind or just want to say hi? Drop me a message.
         </p>
 

@@ -18,21 +18,21 @@ export function Experience() {
                 className="absolute left-0 top-0 rounded-lg"
               />
               <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-                <h3 className="font-semibold">{exp.role}</h3>
-                <span className="text-sm text-zinc-500 dark:text-zinc-400">
+                <h3 className="text-[17px] font-semibold">{exp.role}</h3>
+                <span className="text-[15px] text-zinc-500 dark:text-zinc-400">
                   {exp.period}
                 </span>
               </div>
-              <p className="mb-2 text-sm font-medium text-blue-600 dark:text-blue-400">
+              <p className="mb-2 text-[15px] font-medium text-blue-600 dark:text-blue-400">
                 {exp.company}
               </p>
-              <p className="mb-3 text-sm text-zinc-600 dark:text-zinc-400">
+              <p className="mb-3 text-[15px] text-zinc-600 dark:text-zinc-400">
                 {exp.description}
               </p>
-              <ul className="space-y-1 text-sm text-zinc-500 dark:text-zinc-400">
+              <ul className="space-y-1.5 text-[15px] text-zinc-500 dark:text-zinc-400">
                 {exp.highlights.map((h, i) => (
                   <li key={i} className="flex gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-300 dark:bg-zinc-600" />
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-300 dark:bg-zinc-600" />
                     {h}
                   </li>
                 ))}
@@ -44,22 +44,22 @@ export function Experience() {
         <h2 className="mb-8 text-3xl font-bold tracking-tight">Education</h2>
         <div className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-800">
           <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-            <h3 className="font-semibold">{education.school}</h3>
-            <span className="text-sm text-zinc-500 dark:text-zinc-400">
+            <h3 className="text-[17px] font-semibold">{education.school}</h3>
+            <span className="text-[15px] text-zinc-500 dark:text-zinc-400">
               {education.period}
             </span>
           </div>
-          <p className="mb-1 text-sm text-blue-600 dark:text-blue-400">
+          <p className="mb-1 text-[15px] text-blue-600 dark:text-blue-400">
             {education.degree}
           </p>
-          <p className="mb-4 text-sm text-zinc-600 dark:text-zinc-400">
+          <p className="mb-4 text-[15px] text-zinc-600 dark:text-zinc-400">
             {education.honours} &middot; CGPA: {education.gpa}
           </p>
           <div className="flex flex-wrap gap-2">
             {education.awards.map((award) => (
               <span
                 key={award}
-                className="rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700 dark:bg-amber-900/20 dark:text-amber-400"
+                className="rounded-full bg-amber-50 px-3 py-1 text-[13px] font-medium text-amber-700 dark:bg-amber-900/20 dark:text-amber-400"
               >
                 {award}
               </span>
