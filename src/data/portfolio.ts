@@ -116,17 +116,6 @@ export const projects: Project[] = [
     period: "2025 - 2026",
   },
   {
-    slug: "mobile-life",
-    title: "Mobile Life Platform",
-    description:
-      "Phone repair and trade-in platform with AI chatbot — 13-step conversation flow, Shopify CSV import, catalog management. 59 passing tests.",
-    tags: ["TypeScript", "React", "Hono", "Drizzle", "Neon", "OpenAI", "WhatsApp API"],
-    image: "/projects/mobilelife.svg",
-    category: "work",
-    context: "Voltade — Client Project",
-    period: "2025 - 2026",
-  },
-  {
     slug: "hr-ai-agents",
     title: "HR AI Agents",
     description:
