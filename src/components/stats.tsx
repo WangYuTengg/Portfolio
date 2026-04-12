@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from "react";
 const stats = [
   { value: 498, suffix: "+", label: "Commits" },
   { value: 30, suffix: "+", label: "Companies Served" },
-  { value: 3, suffix: "", label: "Hackathon Wins" },
-  { value: 2, suffix: "+", label: "Years Experience" },
+  { value: 4, suffix: "", label: "Hackathon Wins" },
+  { value: 3, suffix: "+", label: "Years Experience" },
 ];
 
 function AnimatedNumber({ target, suffix, inView }: { target: number; suffix: string; inView: boolean }) {

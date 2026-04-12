@@ -4,7 +4,6 @@ import { About } from "@/components/about";
 import { Experience } from "@/components/experience";
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
-import { Blog } from "@/components/blog";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
@@ -26,9 +25,6 @@ export default function Home() {
         </ScrollReveal>
         <ScrollReveal>
           <Skills />
-        </ScrollReveal>
-        <ScrollReveal>
-          <Blog />
         </ScrollReveal>
         <ScrollReveal>
           <Contact />
