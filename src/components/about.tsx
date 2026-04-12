@@ -12,10 +12,10 @@ export function About() {
               <span className="font-medium text-foreground">Voltade</span>, where
               I build production AI systems for enterprise clients. I&apos;ve worked on
               everything from{" "}
-              <span className="text-violet-600 dark:text-violet-400">supplier intelligence platforms</span> and{" "}
-              <span className="text-violet-600 dark:text-violet-400">WhatsApp-integrated chatbots</span> to{" "}
-              <span className="text-violet-600 dark:text-violet-400">OCR invoice processing</span> and a{" "}
-              <span className="text-violet-600 dark:text-violet-400">no-code AI agent builder</span>.
+              <span className="font-semibold text-purple-500 dark:text-purple-300">supplier intelligence platforms</span> and{" "}
+              <span className="font-semibold text-purple-500 dark:text-purple-300">WhatsApp-integrated chatbots</span> to{" "}
+              <span className="font-semibold text-purple-500 dark:text-purple-300">OCR invoice processing</span> and a{" "}
+              <span className="font-semibold text-purple-500 dark:text-purple-300">no-code AI agent builder</span>.
             </p>
             <p className="text-zinc-600 dark:text-zinc-400">
               My go-to stack is{" "}
@@ -29,7 +29,7 @@ export function About() {
               <span className="font-medium text-foreground">Computer Science</span> and{" "}
               <span className="font-medium text-foreground">Economics</span> at{" "}
               <span className="font-medium text-foreground">NTU Singapore</span>
-              (CGPA 4.5/5.0). When I&apos;m not coding, I&apos;m probably playing CS2
+               (CGPA 4.5/5.0). When I&apos;m not coding, I&apos;m probably playing CS2
               or hunting for good food.
             </p>
           </div>
