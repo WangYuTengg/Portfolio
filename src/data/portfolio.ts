@@ -169,7 +169,7 @@ export const projects: Project[] = [
       "Logistics optimization for PSA — ARIMA forecasting for vessel arrivals, interactive dashboards, real-time port news sentiment analysis.",
     tags: ["React", "Flask", "Python", "ARIMA", "Pandas", "Nivo"],
     github: "https://github.com/WangYuTengg/LogiFlow",
-    image: "/projects/logiflow.svg",
+    image: "/projects/logiflow.jpg",
     category: "personal",
     context: "PSA Code Sprint 2023 — Top 8",
     period: "2023",
