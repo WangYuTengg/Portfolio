@@ -108,26 +108,6 @@ export function Contact() {
           </form>
         )}
 
-        <div className="mt-10 flex justify-center gap-4">
-          <a
-            href={siteConfig.socials.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg p-2 text-zinc-400 transition-colors hover:text-zinc-900 dark:hover:text-zinc-100"
-            aria-label="GitHub"
-          >
-            <GithubIcon className="h-6 w-6" />
-          </a>
-          <a
-            href={siteConfig.socials.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg p-2 text-zinc-400 transition-colors hover:text-zinc-900 dark:hover:text-zinc-100"
-            aria-label="LinkedIn"
-          >
-            <LinkedinIcon className="h-6 w-6" />
-          </a>
-        </div>
       </div>
     </section>
   );
