@@ -120,7 +120,7 @@ export const projects: Project[] = [
     description:
       "No-code AI agent builder where non-technical users create, test, and deploy chatbots to WhatsApp, Web, and Telegram through a conversational \"vibe coding\" interface.",
     tags: ["TanStack Start", "Bun", "Drizzle", "E2B", "OpenCode", "Mastra", "Railway"],
-    image: "/projects/studio.svg",
+    image: "/projects/studio.jpg",
     category: "work",
     context: "Voltade (Core Product)",
     period: "2025 - 2026",
